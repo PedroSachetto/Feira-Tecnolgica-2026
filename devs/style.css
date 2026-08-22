@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-image: url('img/sachetto.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(54, 54, 37, 0.4);
+    z-index: 10;
+}
+
+.logo {
+    margin-left: 85px;
+}
+
+.logo img {
+    width: 105px;
+    height: auto;
+    display: block;
+}
+
+
+.menu nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.menu nav a:hover {
+    opacity: 0.7;
+}
