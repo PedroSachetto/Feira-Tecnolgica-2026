@@ -59,3 +59,453 @@ body {
 .menu nav a:hover {
     opacity: 0.7;
 }
+
+/* =========================
+   CARDS DOS ANIMAIS
+========================= */
+
+.animais {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    padding: 20px 30px;
+    margin-top: 650px;
+    margin-bottom: 40px;
+}
+
+.card-animal {
+    width: 300px;
+    height: 480px;
+    overflow: hidden;
+
+    background: rgba(35, 35, 25, 0.55);
+    border: 1.5px solid white;
+    border-radius: 15px;
+    color: white;
+}
+
+.card-animal img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-bottom:1px solid white;
+}
+
+.info-animal {
+    padding: 12px 14px;
+    text-align: left;
+}
+
+.info-animal h3 {
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+.nome-cientifico {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+
+.info-animal > p:not(.nome-cientifico) {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.info-animal button {
+    width: 100%;
+    height: 40px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.info-animal button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* BOTÃO VER MAIS ANIMAIS */
+
+.btn-ver-animais {
+    display: block;
+    width: 130px;
+    height: 32px;
+    margin: 0 auto 30px;
+    
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 8px;
+
+    font-size: 11px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-ver-animais:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* BOTÃO VER MAIS ANIMAIS */
+
+.btn-ver-animais {
+    display: block;
+    width: 220px;
+    height: 60px;
+    margin: 0 auto 55px;
+
+    font-size: 15px;
+}
+
+/* 
+   APRESENTAÇÃO
+*/
+
+.apresentacao {
+    position: absolute;
+    top: 115px;
+    left: 0;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 0 10%;
+}
+
+
+/* CARD ENTENDA */
+
+.card-projeto {
+    width: 520px;
+    min-height: 360px;
+
+    padding: 20px;
+
+    background: rgba(35, 35, 25, 0.55);
+    border: 1px solid white;
+    border-radius: 15px;
+
+    color: white;
+
+    text-align: center;
+}
+
+.card-projeto h1 {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 1.40;
+
+    text-decoration: underline;
+
+    margin-bottom: 15px;
+}
+
+.card-projeto p {
+    font-size: 20px;
+    line-height: 1.4;
+
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.card-projeto button {
+    padding: 18px 26px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-projeto button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* 
+   WHATSAPP
+*/
+
+.card-whatsapp {
+    width: 400px;
+    height: 280px;
+
+    padding: 20px 15px;
+
+    background: rgba(35, 35, 25, 0.55);
+    border: 1px solid white;
+    border-radius: 15px;
+
+    color: white;
+
+    text-align: center;
+
+    margin-top: 45px;
+}
+
+.card-whatsapp p {
+    font-size: 26px;
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+}
+
+.card-whatsapp span {
+    display: block;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+.card-whatsapp button {
+    width: 80px;
+    height: 80px;
+
+    background: transparent;
+
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    transition: 0.3s;
+}
+
+.card-whatsapp button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card-whatsapp img {
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+}
+
+/* =========================
+   RESGATES E ADOÇÃO
+========================= */
+
+.informacoes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+
+    margin-top: 25px;
+    padding-bottom: 40px;
+}
+
+.card-resgates,
+.card-adocao {
+    position: relative;
+
+    width: 500px;
+    height: 350px;
+
+    overflow: hidden;
+
+    background: rgba(35, 35, 25, 0.55);
+    border: 1px solid white;
+    border-radius: 15px;
+
+    color: white;
+}
+
+.texto-info {
+    position: relative;
+    z-index: 2;
+
+    width: 55%;
+    padding: 20px 15px;
+}
+
+.texto-info h2 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.texto-info p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.texto-info button {
+    width: 170px;
+    height: 60px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.texto-info button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* IMAGENS */
+
+.card-resgates img {
+    position: absolute;
+
+    right: -15px;
+    bottom: -5px;
+
+    width: 370px;
+    height: auto;
+
+    z-index: 1;
+}
+
+.card-adocao img {
+    position: absolute;
+
+    right: -10px;
+    bottom: -5px;
+
+    width: 320px;
+    height: auto;
+
+    z-index: 1;
+}
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    width: 100%;
+
+    background: rgba(54, 54, 37, 0.4);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+    color: white;
+
+    padding-top: 30px;
+}
+
+.rodape-conteudo {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 25px;
+}
+
+
+/* LOGO */
+
+.rodape-logo img {
+    width: 230px;
+    height: auto;
+}
+
+
+/* INFORMAÇÕES */
+
+.rodape-info {
+    width: 300px;
+}
+
+.rodape-info h3,
+.rodape-links h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.rodape-info p {
+    font-size: 21px;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+
+/* LINKS */
+
+.rodape-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-links a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 21px;
+
+    margin-bottom: 5px;
+
+    transition: 0.3s;
+}
+
+.rodape-links a:hover {
+    opacity: 0.6;
+}
+
+
+/* PARTE FINAL */
+
+.rodape-final {
+    width: 100%;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    text-align: center;
+
+    padding: 12px 0;
+}
+
+.rodape-final p {
+    font-size: 22px;
+    opacity: 0.5;
+}
