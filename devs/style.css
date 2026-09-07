@@ -70,6 +70,41 @@ body {
     margin: 200px auto 60px;
 }
 
+ .card1 .titulo {
+    
+    font-size: 28px;
+    margin-bottom: 3%;
+
+}
+ .card1 .descrisao{
+
+    font-size: 21px;
+    margin-top: 10%;
+    margin-right: 10%;
+    text-align: justify;
+
+}
+
+.card1 {
+    height: 340px;
+    width: 500px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-left: 45px;
+
+    color: white;
+    position: relative;
+}
+
 .card {
     height: 340px;
     width: 500px;
@@ -127,11 +162,19 @@ body {
 }
 
 .links img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     transition: transform 0.3s ease;
 }
 
 .links img:hover {
-    transform: scale(1.15);
+    transform: scale(1.35);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(0.95);
 }
