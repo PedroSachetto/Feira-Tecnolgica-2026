@@ -15,6 +15,7 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: Arial;
 }
 
 .menu {
@@ -61,75 +62,278 @@ body {
     opacity: 0.7;
 }
 
+.h1-topo {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 160px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .animais {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 75px;
-    padding: 20px 30px;
-    margin-top: 650px;
-    margin-bottom: 40px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 40px;
+    margin: 0 auto 50px;
 }
 
 .card-animal {
     width: 300px;
-    height: 480px;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-
-    background: rgba(35, 35, 25, 0.55);
-    border: 1.5px solid white;
-    border-radius: 15px;
+    background: rgba(35, 35, 25, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 18px;
     color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.card-animal:hover {
+    transform: translateY(-8px);
+    border-color: white;
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
 .card-animal img {
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
     display: block;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: transform 0.4s ease;
+}
+
+.card-animal:hover img {
+    transform: scale(1.05);
 }
 
 .info-animal {
-    padding: 12px 14px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 18px;
 }
 
 .info-animal h3 {
-    font-size: 17px;
-    font-weight: normal;
-    margin-bottom: 3px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 1.2;
 }
 
 .nome-cientifico {
-    font-size: 15px;
+    font-size: 14px;
     font-style: italic;
-    margin-bottom: 12px;
-    opacity: 0.8;
+    margin-bottom: 14px;
+    opacity: 0.7;
 }
 
 .info-animal>p:not(.nome-cientifico) {
-    font-size: 15px;
-    line-height: 1.4;
-    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 .info-animal button {
     width: 100%;
-    height: 40px;
-
+    height: 42px;
+    margin-top: auto;
     background: transparent;
     color: white;
-
-    border: 1px solid white;
-    border-radius: 8px;
-
-    font-size: 15px;
-
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 500;
     cursor: pointer;
-    transition: 0.3s;
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease,
+        border-color 0.3s ease;
 }
 
 .info-animal button:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: white;
+    transform: scale(0.98);
+}
+
+.info-animal button:active {
+    transform: scale(0.95);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.modal-conteudo {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    min-height: 400px;
+    background: rgba(35, 35, 25, 0.90);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    animation: aparecer 0.3s ease;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.modal-informacoes {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-informacoes h2 {
+    color: #638023;
+    margin-bottom: 20px;
+}
+
+.modal-informacoes p {
+    color: white;
+    line-height: 1.7;
+}
+
+.modal-foto {
+    width: 50%;
+    height: 100%;
+}
+
+.fechar:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+#modal-titulo {
+    margin-bottom: 20px;
+    color: #ffff;
+    font-size: 28px;
+}
+
+#modal-texto {
+    line-height: 1.7;
+    color: white;
+}
+
+#modal-imagem {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .animais {
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .card-animal {
+        width: 280px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    h1 {
+        font-size: 26px;
+        margin: 55px 0 25px;
+    }
+
+    .animais {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 15px;
+    }
+
+    .card-animal {
+        width: 100%;
+        max-width: 340px;
+        min-height: 460px;
+    }
+
+    .card-animal img {
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .card-animal {
+        max-width: 310px;
+    }
+
+    .card-animal img {
+        height: 200px;
+    }
+
+    .info-animal {
+        padding: 15px;
+    }
+
 }
