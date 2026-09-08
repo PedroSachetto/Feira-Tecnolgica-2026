@@ -19,6 +19,8 @@
   <img width="20" />
   <img src="https://skillicons.dev/icons?i=css" height="60" alt="css logo"  />
   <img width="20" />
+  <img src="https://skillicons.dev/icons?i=javascript" height="60" alt="javascript logo"  />
+  <img width="20" />
   <img src="https://skillicons.dev/icons?i=figma" height="60" alt="figma logo"  />
   <img width="20" />
   <img src="https://skillicons.dev/icons?i=git" height="60" alt="git logo"  />
