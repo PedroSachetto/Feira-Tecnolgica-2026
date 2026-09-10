@@ -199,23 +199,61 @@ h1 {
 
 .modal-conteudo {
     position: relative;
-    width: 100%;
-    max-width: 750px;
-    min-height: 400px;
+    width: 90%;
+    max-width: 1000px;
     background: rgba(35, 35, 25, 0.90);
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 18px;
     overflow: hidden;
     display: flex;
+    align-items: stretch;
     color: white;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
     animation: aparecer 0.3s ease;
+}
+
+.modal-informacoes {
+    width: 45%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow-wrap: break-word;
+}
+
+#modal-titulo {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 28px;
+}
+
+#modal-texto {
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+.modal-foto {
+    width: 55%;
+    flex-shrink: 0;
+    display: flex;
+}
+
+#modal-imagem {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .fechar {
     position: absolute;
     top: 10px;
     right: 15px;
+    z-index: 10;
     border: none;
     background: none;
     color: white;
@@ -224,51 +262,9 @@ h1 {
     transition: 0.3s ease;
 }
 
-.modal-informacoes {
-    width: 50%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.modal-informacoes h2 {
-    color: #638023;
-    margin-bottom: 20px;
-}
-
-.modal-informacoes p {
-    color: white;
-    line-height: 1.7;
-}
-
-.modal-foto {
-    width: 50%;
-    height: 100%;
-}
-
 .fechar:hover {
     color: #ff0000;
     transform: scale(1.1);
-}
-
-#modal-titulo {
-    margin-bottom: 20px;
-    color: #ffff;
-    font-size: 28px;
-}
-
-#modal-texto {
-    line-height: 1.7;
-    color: white;
-}
-
-#modal-imagem {
-    width: 100%;
-    height: 100%;
-    min-height: 400px;
-    object-fit: cover;
-    display: block;
 }
 
 @keyframes aparecer {

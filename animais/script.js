@@ -7,7 +7,7 @@ function abrirModal(animal) {
     const animais = {
         gamba: {
             titulo: "Saruê / Gambá-de-orelha-preta",
-            imagem: "img/gamba.jpg",
+            imagem: "img/animais/gamba.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Mantenha distância e não tente tocar no animal.<br>
@@ -19,9 +19,23 @@ function abrirModal(animal) {
             `
         },
 
+        onca: {
+            titulo: "Onça-parda",
+            imagem: "img/animais/onca.png",
+            texto: `
+                <strong>O que fazer:</strong><br><br>
+                • Mantenha distância e não tente se aproximar.<br>
+                • Não tente tocar, capturar ou perseguir o animal.<br>
+                • Mantenha crianças e animais domésticos afastados.<br>
+                • Não ofereça comida nem tente atraí-la.<br>
+                • Dê espaço para que o animal possa sair do local.<br>
+                • Se estiver em uma área urbana ou houver risco, procure ajuda especializada.
+            `
+        },
+
         sagui: {
             titulo: "Sagui",
-            imagem: "img/sagui.jpg",
+            imagem: "img/animais/sagui.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente pegar ou alimentar o animal.<br>
@@ -35,7 +49,7 @@ function abrirModal(animal) {
 
         capivara: {
             titulo: "Capivara",
-            imagem: "img/capivara.jpg",
+            imagem: "img/animais/capivara.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Mantenha uma distância segura.<br>
@@ -49,7 +63,7 @@ function abrirModal(animal) {
 
         tamandua: {
             titulo: "Tamanduá-mirim",
-            imagem: "img/tamandua.jpg",
+            imagem: "img/animais/tamandua.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Mantenha distância.<br>
@@ -63,7 +77,7 @@ function abrirModal(animal) {
 
         quati: {
             titulo: "Quati",
-            imagem: "img/quati.jpg",
+            imagem: "img/animais/quati.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente tocar ou alimentar o animal.<br>
@@ -77,7 +91,7 @@ function abrirModal(animal) {
 
         esquilo: {
             titulo: "Esquilo / Caxinguelê",
-            imagem: "img/esquilo.jpg",
+            imagem: "img/animais/esquilo.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Observe o animal de longe.<br>
@@ -91,7 +105,7 @@ function abrirModal(animal) {
 
         morcego: {
             titulo: "Morcego",
-            imagem: "img/morcego.jpg",
+            imagem: "img/animais/morcego.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não toque no morcego, principalmente se estiver no chão.<br>
@@ -105,7 +119,7 @@ function abrirModal(animal) {
 
         tucano: {
             titulo: "Tucano-de-bico-verde",
-            imagem: "img/tucano.jpg",
+            imagem: "img/animais/tucano.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente pegar ou alimentar o tucano.<br>
@@ -119,7 +133,7 @@ function abrirModal(animal) {
 
         jacu: {
             titulo: "Jacu",
-            imagem: "img/jacu.jpg",
+            imagem: "img/animais/jacu.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Observe de longe.<br>
@@ -133,7 +147,7 @@ function abrirModal(animal) {
 
         picapau: {
             titulo: "Pica-pau",
-            imagem: "img/picapau.jpg",
+            imagem: "img/animais/picapau.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente tocar ou capturar a ave.<br>
@@ -147,7 +161,7 @@ function abrirModal(animal) {
 
         saracura: {
             titulo: "Saracura-do-mato",
-            imagem: "img/saracura.jpg",
+            imagem: "img/animais/saracura.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Mantenha distância.<br>
@@ -161,7 +175,21 @@ function abrirModal(animal) {
 
         coruja: {
             titulo: "Coruja",
-            imagem: "img/coruja.png",
+            imagem: "img/animais/coruja.png",
+            texto: `
+                <strong>O que fazer:</strong><br><br>
+                • Não tente tocar ou capturar a ave.<br>
+                • Mantenha distância.<br>
+                • Evite barulho e movimentos bruscos.<br>
+                • Mantenha animais domésticos afastados.<br>
+                • Não tente retirar a ave do local à força.<br>
+                • Se estiver ferida, procure ajuda especializada.
+            `
+        },
+
+        corujaigreja: {
+            titulo: "Coruja",
+            imagem: "img/animais/curujaigreja.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente tocar ou capturar a ave.<br>
@@ -175,7 +203,7 @@ function abrirModal(animal) {
 
         gaviao: {
             titulo: "Gavião-carijó",
-            imagem: "img/gaviao.jpg",
+            imagem: "img/animais/gaviao.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente tocar ou capturar a ave.<br>
@@ -189,7 +217,7 @@ function abrirModal(animal) {
 
         sabia: {
             titulo: "Sabiá-laranjeira",
-            imagem: "img/sabia.jpg",
+            imagem: "img/animais/sabia.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente pegar ou alimentar a ave.<br>
@@ -203,7 +231,7 @@ function abrirModal(animal) {
 
         bemtevi: {
             titulo: "Bem-te-vi",
-            imagem: "img/bemtevi.jpg",
+            imagem: "img/animais/bemtevi.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Observe de longe.<br>
@@ -217,7 +245,7 @@ function abrirModal(animal) {
 
         teiu: {
             titulo: "Lagarto Teiú",
-            imagem: "img/teiu.jpg",
+            imagem: "img/animais/teiu.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Mantenha distância.<br>
@@ -231,7 +259,7 @@ function abrirModal(animal) {
 
         coral: {
             titulo: "Cobra-coral",
-            imagem: "img/coral.jpg",
+            imagem: "img/animais/coral.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Mantenha distância segura.<br>
@@ -245,7 +273,7 @@ function abrirModal(animal) {
 
         jararaca: {
             titulo: "Jararaca",
-            imagem: "img/jararaca.jpg",
+            imagem: "img/animais/jararaca.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Afaste-se imediatamente.<br>
@@ -259,7 +287,7 @@ function abrirModal(animal) {
 
         cobrapio: {
             titulo: "Cobra-cipó",
-            imagem: "img/cobrapio.jpg",
+            imagem: "img/animais/cobra-cipo.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente pegar a cobra.<br>
@@ -273,7 +301,7 @@ function abrirModal(animal) {
 
         caninana: {
             titulo: "Caninana",
-            imagem: "img/caninana.jpg",
+            imagem: "img/animais/caninana.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Mantenha distância.<br>
@@ -287,7 +315,7 @@ function abrirModal(animal) {
 
         dormideira: {
             titulo: "Dormideira",
-            imagem: "img/dormideira.jpg",
+            imagem: "img/animais/dormideira.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente tocar ou capturar a cobra.<br>
@@ -301,7 +329,7 @@ function abrirModal(animal) {
 
         sapo: {
             titulo: "Sapo-cururu",
-            imagem: "img/sapo.jpg",
+            imagem: "img/animais/sapo.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Evite tocar no animal.<br>
@@ -315,7 +343,7 @@ function abrirModal(animal) {
 
         ra: {
             titulo: "Rã",
-            imagem: "img/ra.jpg",
+            imagem: "img/animais/ra.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Evite tocar no animal.<br>
@@ -329,7 +357,7 @@ function abrirModal(animal) {
 
         perereca: {
             titulo: "Perereca",
-            imagem: "img/perereca.jpg",
+            imagem: "img/animais/perereca.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Evite tocar no animal.<br>
@@ -343,7 +371,7 @@ function abrirModal(animal) {
 
         cagado: {
             titulo: "Cágado-de-barbicha",
-            imagem: "img/cagado.jpg",
+            imagem: "img/animais/cagado.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente pegar o animal.<br>
@@ -357,7 +385,7 @@ function abrirModal(animal) {
 
         escorpiao: {
             titulo: "Escorpião-amarelo",
-            imagem: "img/escorpiao.jpg",
+            imagem: "img/animais/escorpiao.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não toque no escorpião.<br>
@@ -371,7 +399,7 @@ function abrirModal(animal) {
 
         armadeira: {
             titulo: "Aranha-armadeira",
-            imagem: "img/armadeira.jpg",
+            imagem: "img/animais/armadeira.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não tente tocar ou capturar a aranha.<br>
@@ -385,7 +413,7 @@ function abrirModal(animal) {
 
         marrom: {
             titulo: "Aranha-marrom",
-            imagem: "img/marrom.jpg",
+            imagem: "img/animais/marrom.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Não toque na aranha.<br>
@@ -399,7 +427,7 @@ function abrirModal(animal) {
 
         caranguejeira: {
             titulo: "Aranha-caranguejeira",
-            imagem: "img/caranguejeira.jpg",
+            imagem: "img/animais/caranguejeira.png",
             texto: `
                 <strong>O que fazer:</strong><br><br>
                 • Mantenha distância.<br>
@@ -436,7 +464,7 @@ function fecharModal() {
 }
 
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     const modal = document.getElementById("modal");
 
     if (event.target === modal) {
