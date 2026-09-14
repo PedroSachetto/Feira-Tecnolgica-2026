@@ -208,3 +208,317 @@ main {
     line-height: 1.5;
     opacity: 0.8;
 }
+
+@media (max-width: 1100px) {
+
+    .logo {
+        margin-left: 35px;
+    }
+
+    .menu nav {
+        gap: 30px;
+    }
+
+    .introducao {
+        gap: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .historia,
+    .logo-projeto {
+        width: 45%;
+    }
+
+    .texto-projeto {
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    /* MENU */
+
+    .menu {
+        height: auto;
+        min-height: 110px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .menu nav {
+        position: static;
+        transform: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 25px;
+    }
+
+    .menu nav a {
+        font-size: 14px;
+    }
+
+
+    /* CONTEÚDO */
+
+    main {
+        padding-top: 140px;
+    }
+
+    .introducao {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .historia,
+    .logo-projeto {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .historia {
+        min-height: auto;
+        padding: 30px;
+    }
+
+    .historia h1 {
+        font-size: 26px;
+    }
+
+    .historia p {
+        font-size: 19px;
+    }
+
+    .logo-projeto {
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .logo-projeto img {
+        width: 260px;
+    }
+
+
+    /* TEXTO DO PROJETO */
+
+    .texto-projeto {
+        width: calc(100% - 40px);
+        max-width: 600px;
+        height: auto;
+        margin-top: 35px;
+        padding: 30px;
+    }
+
+    .texto-projeto p {
+        font-size: 19px;
+    }
+
+
+    /* ODS */
+
+    .ods {
+        width: calc(100% - 40px);
+        max-width: 600px;
+        height: auto;
+        min-height: 200px;
+    }
+
+
+    /* RODAPÉ */
+
+    .rodape-conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .rodape-info {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .rodape-logo img {
+        width: 200px;
+    }
+
+    .rodape-info h3,
+    .rodape-links h3 {
+        font-size: 20px;
+    }
+
+    .rodape-info p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+
+    /* MENU */
+
+    .menu {
+        min-height: 125px;
+    }
+
+    .menu nav {
+        gap: 10px 16px;
+    }
+
+    .menu nav a {
+        font-size: 12px;
+    }
+
+
+    /* CONTEÚDO */
+
+    main {
+        padding-top: 150px;
+    }
+
+    .introducao {
+        padding: 15px;
+    }
+
+    .historia {
+        padding: 25px 20px;
+    }
+
+    .historia h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .historia p {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .logo-projeto {
+        height: 190px;
+    }
+
+    .logo-projeto img {
+        width: 220px;
+    }
+
+
+    /* TEXTO */
+
+    .texto-projeto {
+        width: calc(100% - 30px);
+        margin-top: 25px;
+        padding: 25px 20px;
+    }
+
+    .texto-projeto p {
+        font-size: 17px;
+        line-height: 1.45;
+    }
+
+
+    /* ODS */
+
+    .ods {
+        width: calc(100% - 30px);
+        margin-top: 25px;
+        padding: 15px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .ods img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* RODAPÉ */
+
+    .rodape {
+        padding-top: 25px;
+    }
+
+    .rodape-conteudo {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .rodape-logo img {
+        width: 180px;
+    }
+
+    .rodape-info {
+        width: 100%;
+    }
+
+    .rodape-info h3,
+    .rodape-links h3 {
+        font-size: 19px;
+    }
+
+    .rodape-info p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .menu nav {
+        gap: 8px 12px;
+    }
+
+    .menu nav a {
+        font-size: 11px;
+    }
+
+
+    .historia h1 {
+        font-size: 22px;
+    }
+
+    .historia p {
+        font-size: 16px;
+    }
+
+    .logo-projeto img {
+        width: 190px;
+    }
+
+    .texto-projeto {
+        width: calc(100% - 20px);
+        padding: 20px 15px;
+    }
+
+    .texto-projeto p {
+        font-size: 16px;
+    }
+
+    .ods {
+        width: calc(100% - 20px);
+    }
+
+    .ods img {
+        width: 85px;
+        height: 85px;
+    }
+}
