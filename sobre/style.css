@@ -4,76 +4,57 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     min-height: 100%;
 }
 
 body {
-    min-height: 100vh;
-
-    background-image: url("img/bellato.png");
+    background-image: url('img/bellato.png');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-    color: white;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
-
-/* =========================
-   MENU
-========================= */
-
 .menu {
-    position: fixed;
-
+    position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
-    height: 85px;
-
+    height: 78px;
     display: flex;
     align-items: center;
-
-    background-color: rgba(54, 54, 37, 0.45);
-
+    background-color: rgba(54, 54, 37, 0.4);
     z-index: 10;
 }
 
 .logo {
-    margin-left: 75px;
+    margin-left: 85px;
 }
 
 .logo img {
-    width: 125px;
+    width: 105px;
     height: auto;
     display: block;
 }
 
+
 .menu nav {
     position: absolute;
-
     left: 50%;
     transform: translateX(-50%);
-
     display: flex;
     align-items: center;
-
-    gap: 65px;
+    gap: 55px;
 }
 
 .menu nav a {
     color: white;
-
     text-decoration: none;
-
-    font-size: 18px;
-
+    font-size: 16px;
     font-family: "Arial Narrow", Arial, sans-serif;
-
     transition: 0.3s;
 }
 
@@ -81,26 +62,16 @@ body {
     opacity: 0.7;
 }
 
-
-/* =========================
-   CONTEÚDO
-========================= */
-
 main {
     width: 100%;
     min-height: 100vh;
-
     padding-top: 125px;
 }
 
 
-/* =========================
-   PRIMEIRA PARTE
-========================= */
-
 .introducao {
     width: 100%;
-
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -123,8 +94,6 @@ main {
 }
 
 
-/* CARD DA HISTÓRIA */
-
 .historia {
     width: 475px;
     min-height: 260px;
@@ -145,7 +114,7 @@ main {
 .historia p {
     width: 95%;
 
-    font-size: 16px;
+    font-size: 24px;
 
     line-height: 1.4;
 
@@ -153,15 +122,9 @@ main {
 }
 
 
-/* =========================
-   CARD DO LOGO
-========================= */
-
 .logo-projeto {
     width: 475px;
-    height: 205px;
-
-    margin-top: 10px;
+    height: 260px;
 
     display: flex;
     align-items: center;
@@ -173,13 +136,9 @@ main {
     height: auto;
 }
 
-
-/* =========================
-   TEXTO DO PROJETO
-========================= */
-
 .texto-projeto {
     width: 1050px;
+    height: 410px;
     max-width: calc(100% - 70px);
 
     margin: 70px auto 0;
@@ -198,7 +157,7 @@ main {
 }
 
 .texto-projeto p {
-    font-size: 16px;
+    font-size: 24px;
 
     line-height: 1.5;
 
@@ -212,17 +171,9 @@ main {
 }
 
 
-/* =========================
-   ODS
-========================= */
-
-/* =========================
-   ODS
-========================= */
-
 .ods {
-    width: 410px;
-    height: 135px;
+    width: 620px;
+    height: 235px;
 
     margin: 40px auto 25px;
 
@@ -244,123 +195,47 @@ main {
 }
 
 .ods img {
-    width: 78px;
-    height: 78px;
+    width: 128px;
+    height: 128px;
 
     object-fit: contain;
 }
 
-
-/* =========================
-   RODAPÉ
-========================= */
-
-footer {
+.rodape {
     width: 100%;
-
-    margin-top: 20px;
-
-    padding: 18px 0 30px;
-
-    text-align: center;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.45);
+    background: rgba(54, 54, 37, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding-top: 30px;
 }
 
-footer p {
-    font-size: 27px;
-
-    font-weight: 300;
-
-    color: #eeeeee;
+.rodape-conteudo {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
 }
 
-
-/* =========================
-   RESPONSIVIDADE
-========================= */
-
-@media (max-width: 900px) {
-
-    .logo {
-        margin-left: 25px;
-    }
-
-    .menu nav {
-        gap: 25px;
-    }
-
-    .menu nav a {
-        font-size: 14px;
-    }
-
-    .introducao {
-        gap: 25px;
-    }
-
-    .historia,
-    .logo-projeto {
-        width: 45%;
-    }
+.rodape-logo img {
+    width: 230px;
+    height: auto;
 }
 
+.rodape-info {
+    width: 300px;
+}
 
-@media (max-width: 650px) {
+.rodape-info h3,
+.rodape-links h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
 
-    .menu {
-        height: auto;
-        min-height: 70px;
-    }
-
-    .logo {
-        margin-left: 15px;
-    }
-
-    .logo img {
-        width: 90px;
-    }
-
-    .menu nav {
-        position: static;
-
-        transform: none;
-
-        margin-left: auto;
-        margin-right: 15px;
-
-        gap: 10px;
-    }
-
-    .menu nav a {
-        font-size: 9px;
-    }
-
-    main {
-        padding-top: 100px;
-    }
-
-    .introducao {
-        flex-direction: column;
-        align-items: center;
-
-        padding: 20px;
-    }
-
-    .historia,
-    .logo-projeto {
-        width: 100%;
-        max-width: 475px;
-    }
-
-    .texto-projeto {
-        max-width: calc(100% - 40px);
-
-        margin-top: 40px;
-
-        padding: 30px;
-    }
-
-    .ods {
-        width: 320px;
-    }
+.rodape-info p {
+    font-size: 21px;
+    line-height: 1.5;
+    opacity: 0.8;
 }
