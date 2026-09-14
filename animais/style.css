@@ -183,6 +183,45 @@ h1 {
     transform: scale(0.95);
 }
 
+.rodape {
+    width: 100%;
+    background: rgba(54, 54, 37, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding-top: 30px;
+}
+
+.rodape-conteudo {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.rodape-logo img {
+    width: 230px;
+    height: auto;
+}
+
+.rodape-info {
+    width: 300px;
+}
+
+.rodape-info h3,
+.rodape-links h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.rodape-info p {
+    font-size: 21px;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
 .modal {
     display: none;
     position: fixed;
