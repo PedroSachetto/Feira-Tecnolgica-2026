@@ -178,3 +178,245 @@ body {
 .card:hover {
     transform: scale(0.95);
 }
+
+.rodape {
+    width: 100%;
+    background: rgba(54, 54, 37, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding-top: 30px;
+}
+
+.rodape-conteudo {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.rodape-logo img {
+    width: 230px;
+    height: auto;
+}
+
+.rodape-info {
+    width: 300px;
+}
+
+.rodape-info h3,
+.rodape-links h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.rodape-info p {
+    font-size: 21px;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+@media (max-width: 850px) {
+
+    .menu {
+        min-height: 110px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .logo {
+        position: static;
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .menu nav {
+        position: static;
+        transform: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 25px;
+    }
+
+    .menu nav a {
+        font-size: 14px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        width: calc(100% - 40px);
+        max-width: 550px;
+        margin: 160px auto 50px;
+        gap: 30px;
+    }
+
+    .card1,
+    .card {
+        width: 100%;
+    }
+
+    .rodape-conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .rodape-info {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .rodape-logo img {
+        width: 200px;
+    }
+
+    .rodape-info h3,
+    .rodape-links h3 {
+        font-size: 20px;
+    }
+
+    .rodape-info p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .menu {
+        min-height: 125px;
+    }
+
+    .menu nav {
+        gap: 10px 16px;
+    }
+
+    .menu nav a {
+        font-size: 12px;
+    }
+
+    .container {
+        width: calc(100% - 30px);
+        margin-top: 160px;
+        gap: 25px;
+    }
+
+    .card1,
+    .card {
+        height: auto;
+        min-height: 340px;
+        padding: 25px;
+    }
+
+    .card1 .titulo {
+        font-size: 25px;
+    }
+
+    .card1 .descrisao {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .card img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .links {
+        right: 18px;
+    }
+
+    .links img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .rodape {
+        padding-top: 25px;
+    }
+
+    .rodape-conteudo {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .rodape-logo img {
+        width: 180px;
+    }
+
+    .rodape-info {
+        width: 100%;
+    }
+
+    .rodape-info h3,
+    .rodape-links h3 {
+        font-size: 19px;
+    }
+
+    .rodape-info p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .menu nav {
+        gap: 8px 12px;
+    }
+
+    .menu nav a {
+        font-size: 11px;
+    }
+
+    .container {
+        width: calc(100% - 20px);
+    }
+
+    .card1,
+    .card {
+        padding: 20px;
+    }
+
+    .card img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .card p {
+        font-size: 17px;
+    }
+
+    .links {
+        right: 12px;
+    }
+
+    .links img {
+        width: 40px;
+        height: 40px;
+    }
+}
