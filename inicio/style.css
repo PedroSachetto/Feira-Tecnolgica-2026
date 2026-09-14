@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     min-height: 100%;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -17,19 +19,19 @@ body {
 }
 
 .menu {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 78px;
+    min-height: 78px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(54, 54, 37, 0.4);
+    position: relative;
     z-index: 10;
 }
 
 .logo {
-    margin-left: 85px;
+    position: absolute;
+    left: 85px;
 }
 
 .logo img {
@@ -38,14 +40,12 @@ body {
     display: block;
 }
 
-
 .menu nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 55px;
+    flex-wrap: wrap;
 }
 
 .menu nav a {
@@ -60,9 +60,103 @@ body {
     opacity: 0.7;
 }
 
-/* =========================
-   CARDS DOS ANIMAIS
-========================= */
+.card-projeto,
+.card-whatsapp {
+    background: rgba(35, 35, 25, 0.55);
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+}
+
+.card-projeto {
+    width: 420px;
+    min-height: 500px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 55px;
+    margin-left: 12.5%;
+}
+
+.card-projeto h1 {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+.card-projeto p {
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.card-projeto button {
+    padding: 18px 26px;
+    margin-bottom: 15%;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-projeto button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card-whatsapp {
+    width: 400px;
+    min-height: 280px;
+    padding: 20px 15px;
+    text-align: center;
+    margin-bottom: 240px;
+    margin-left: auto;
+    margin-right: 13%;
+    margin-top: -430px;
+}
+
+.card-whatsapp p {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.card-whatsapp span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card-whatsapp button {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.card-whatsapp button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card-whatsapp img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-top: 5%;
+}
 
 .animais {
     width: 100%;
@@ -70,15 +164,15 @@ body {
     justify-content: center;
     gap: 75px;
     padding: 20px 30px;
-    margin-top: 650px;
+    margin-top: 60px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .card-animal {
     width: 300px;
-    height: 480px;
+    min-height: 480px;
     overflow: hidden;
-
     background: rgba(35, 35, 25, 0.55);
     border: 1.5px solid white;
     border-radius: 15px;
@@ -90,7 +184,7 @@ body {
     height: 250px;
     object-fit: cover;
     display: block;
-    border-bottom:1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .info-animal {
@@ -111,7 +205,7 @@ body {
     opacity: 0.8;
 }
 
-.info-animal > p:not(.nome-cientifico) {
+.info-animal>p:not(.nome-cientifico) {
     font-size: 15px;
     line-height: 1.4;
     margin-bottom: 30px;
@@ -120,15 +214,11 @@ body {
 .info-animal button {
     width: 100%;
     height: 40px;
-
     background: transparent;
     color: white;
-
     border: 1px solid white;
     border-radius: 8px;
-
     font-size: 15px;
-
     cursor: pointer;
     transition: 0.3s;
 }
@@ -137,25 +227,17 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
-
-/* BOTÃO VER MAIS ANIMAIS */
-
 .btn-ver-animais {
     display: block;
-    width: 130px;
-    height: 32px;
-    margin: 0 auto 30px;
-    
-
+    width: 220px;
+    height: 60px;
+    margin: 0 auto 55px;
     background: transparent;
     color: white;
-
     border: 1px solid white;
     border-radius: 8px;
-
-    font-size: 11px;
+    font-size: 15px;
     cursor: pointer;
-
     transition: 0.3s;
 }
 
@@ -163,195 +245,31 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
-
-/* BOTÃO VER MAIS ANIMAIS */
-
-.btn-ver-animais {
-    display: block;
-    width: 220px;
-    height: 60px;
-    margin: 0 auto 55px;
-
-    font-size: 15px;
-}
-
-/* 
-   APRESENTAÇÃO
-*/
-
-.apresentacao {
-    position: absolute;
-    top: 115px;
-    left: 0;
-
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    padding: 0 10%;
-}
-
-
-/* CARD ENTENDA */
-
-.card-projeto {
-    width: 520px;
-    min-height: 360px;
-
-    padding: 20px;
-
-    background: rgba(35, 35, 25, 0.55);
-    border: 1px solid white;
-    border-radius: 15px;
-
-    color: white;
-
-    text-align: center;
-}
-
-.card-projeto h1 {
-    font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 40px;
-    font-weight: normal;
-    letter-spacing: 2px;
-    line-height: 1.40;
-
-    text-decoration: underline;
-
-    margin-bottom: 15px;
-}
-
-.card-projeto p {
-    font-size: 20px;
-    line-height: 1.4;
-
-    text-align: left;
-
-    margin-bottom: 20px;
-}
-
-.card-projeto button {
-    padding: 18px 26px;
-
-    background: transparent;
-    color: white;
-
-    border: 1px solid white;
-    border-radius: 7px;
-
-    font-size: 14px;
-
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.card-projeto button:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-
-/* 
-   WHATSAPP
-*/
-
-.card-whatsapp {
-    width: 400px;
-    height: 280px;
-
-    padding: 20px 15px;
-
-    background: rgba(35, 35, 25, 0.55);
-    border: 1px solid white;
-    border-radius: 15px;
-
-    color: white;
-
-    text-align: center;
-
-    margin-top: 45px;
-}
-
-.card-whatsapp p {
-    font-size: 26px;
-    line-height: 1.4;
-
-    margin-bottom: 10px;
-}
-
-.card-whatsapp span {
-    display: block;
-
-    font-size: 16px;
-
-    margin-bottom: 15px;
-}
-
-.card-whatsapp button {
-    width: 80px;
-    height: 80px;
-
-    background: transparent;
-
-    border: 1px solid #fff;
-    border-radius: 10px;
-
-    cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: auto;
-
-    transition: 0.3s;
-}
-
-.card-whatsapp button:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.card-whatsapp img {
-    width: 40px;
-    height: 40px;
-
-    object-fit: contain;
-}
-
-/* =========================
-   RESGATES E ADOÇÃO
-========================= */
-
 .informacoes {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 400px;
-
+    gap: 100px;
     margin-top: 25px;
-    padding-bottom: 40px;
+    padding: 0 30px 40px;
+    flex-wrap: wrap;
 }
 
 .card-resgates,
 .card-adocao {
     position: relative;
-
     width: 500px;
-    height: 350px;
-
+    min-height: 350px;
     overflow: hidden;
-
     background: rgba(35, 35, 25, 0.55);
     border: 1px solid white;
     border-radius: 15px;
-
     color: white;
 }
 
 .texto-info {
     position: relative;
     z-index: 2;
-
     width: 55%;
     padding: 20px 15px;
 }
@@ -370,15 +288,11 @@ body {
 .texto-info button {
     width: 170px;
     height: 60px;
-
     background: transparent;
     color: white;
-
     border: 1px solid white;
     border-radius: 7px;
-
     font-size: 14px;
-
     cursor: pointer;
     transition: 0.3s;
 }
@@ -387,71 +301,46 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
-
-/* IMAGENS */
-
 .card-resgates img {
     position: absolute;
-
     right: -15px;
     bottom: -5px;
-
     width: 370px;
     height: auto;
-
     z-index: 1;
 }
 
 .card-adocao img {
     position: absolute;
-
     right: -10px;
     bottom: -5px;
-
     width: 320px;
     height: auto;
-
     z-index: 1;
 }
-/* =========================
-   RODAPÉ
-========================= */
 
 .rodape {
     width: 100%;
-
     background: rgba(54, 54, 37, 0.4);
-
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-
     color: white;
-
     padding-top: 30px;
 }
 
 .rodape-conteudo {
     width: 90%;
     max-width: 1000px;
-
     margin: 0 auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding-bottom: 25px;
 }
-
-
-/* LOGO */
 
 .rodape-logo img {
     width: 230px;
     height: auto;
 }
-
-
-/* INFORMAÇÕES */
 
 .rodape-info {
     width: 300px;
@@ -469,43 +358,238 @@ body {
     opacity: 0.8;
 }
 
+@media (max-width: 1100px) {
 
-/* LINKS */
+    .logo {
+        left: 35px;
+    }
 
-.rodape-links {
-    display: flex;
-    flex-direction: column;
+    .menu nav {
+        gap: 30px;
+    }
+
+    .card-projeto {
+        margin-left: 5%;
+    }
+
+    .card-whatsapp {
+        margin-right: 5%;
+    }
+
+    .animais {
+        gap: 40px;
+    }
+
+    .informacoes {
+        gap: 40px;
+    }
 }
 
-.rodape-links a {
-    color: white;
-    text-decoration: none;
+@media (max-width: 850px) {
 
-    font-size: 21px;
+    .menu {
+        min-height: 110px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
 
-    margin-bottom: 5px;
+    .logo {
+        position: static;
+        margin-bottom: 8px;
+    }
 
-    transition: 0.3s;
+    .logo img {
+        width: 80px;
+    }
+
+    .menu nav {
+        position: static;
+        transform: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 25px;
+    }
+
+    .menu nav a {
+        font-size: 14px;
+    }
+
+    .card-projeto {
+        width: calc(100% - 40px);
+        max-width: 500px;
+        min-height: 450px;
+        margin: 50px auto 0;
+    }
+
+    .card-projeto h1 {
+        font-size: 32px;
+    }
+
+    .card-projeto p {
+        font-size: 19px;
+    }
+
+    .card-whatsapp {
+        width: calc(100% - 40px);
+        max-width: 450px;
+        min-height: 280px;
+        margin: 30px auto 0;
+    }
+
+    .animais {
+        margin-top: 60px;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .card-animal {
+        width: 300px;
+    }
+
+    .informacoes {
+        gap: 30px;
+        padding: 0 20px 40px;
+    }
+
+    .card-resgates,
+    .card-adocao {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .rodape-conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .rodape-info {
+        width: 100%;
+    }
 }
 
-.rodape-links a:hover {
-    opacity: 0.6;
-}
+@media (max-width: 550px) {
 
+    body {
+        background-attachment: scroll;
+    }
 
-/* PARTE FINAL */
+    .menu {
+        min-height: 125px;
+    }
 
-.rodape-final {
-    width: 100%;
+    .menu nav {
+        gap: 10px 16px;
+    }
 
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    .menu nav a {
+        font-size: 12px;
+    }
 
-    text-align: center;
+    .card-projeto {
+        width: calc(100% - 30px);
+        min-height: auto;
+        padding: 18px;
+        margin-top: 35px;
+    }
 
-    padding: 12px 0;
-}
+    .card-projeto h1 {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
 
-.rodape-final p {
-    font-size: 22px;
-    opacity: 0.5;
+    .card-projeto p {
+        font-size: 17px;
+    }
+
+    .card-projeto button {
+        padding: 14px 20px;
+        margin-bottom: 10px;
+    }
+
+    .card-whatsapp {
+        width: calc(100% - 30px);
+        min-height: 250px;
+        padding: 20px 15px;
+        margin-top: 25px;
+    }
+
+    .card-whatsapp p {
+        font-size: 21px;
+    }
+
+    .animais {
+        padding: 20px 15px;
+        margin-top: 45px;
+        gap: 25px;
+    }
+
+    .card-animal {
+        width: 100%;
+        max-width: 300px;
+        min-height: 440px;
+    }
+
+    .card-animal img {
+        height: 220px;
+    }
+
+    .informacoes {
+        padding: 0 15px 30px;
+    }
+
+    .card-resgates,
+    .card-adocao {
+        height: 330px;
+        min-height: 330px;
+    }
+
+    .texto-info {
+        width: 65%;
+        padding: 18px 12px;
+    }
+
+    .texto-info h2 {
+        font-size: 28px;
+    }
+
+    .texto-info p {
+        font-size: 16px;
+    }
+
+    .card-resgates img {
+        width: 250px;
+        right: -30px;
+    }
+
+    .card-adocao img {
+        width: 220px;
+        right: -20px;
+    }
+
+    .rodape {
+        padding-top: 25px;
+    }
+
+    .rodape-logo img {
+        width: 180px;
+    }
+
+    .rodape-info h3,
+    .rodape-links h3 {
+        font-size: 19px;
+    }
+
+    .rodape-info p {
+        font-size: 16px;
+    }
+
+    .btn-ver-animais {
+        width: 190px;
+        height: 50px;
+        font-size: 13px;
+        margin-bottom: 35px;
+    }
 }
