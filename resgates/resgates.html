@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resgates</title>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="logo">
+            <img src="img/logo.png" alt="Conviver é Proteger">
+        </div>
+
+        <nav>
+            <a href="#">INÍCIO</a>
+            <a href="#">ANIMAIS</a>
+            <a href="#">RESGATES</a>
+            <a href="#">ADOÇÃO</a>
+            <a href="#">SOBRE</a>
+            <a href="#">DEVS</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+
+        <div class="alguns-resgates">
+            <h1 style="font-size: 40px;">Alguns resgates na nossa região</h1>
+            <br> <br>
+            <p style="font-size: 25px;">Conheça os principais locais e serviços de resgate de animais da nossa região e saiba a quem recorrer quando encontrar um animal que precisa de ajuda.</p>
+            <p style="font-size: 25px;">Entre as instituições parceiras estão a DPfauna, a GCM Ambiental e o Clube dos Vira-Latas.</p>
+            
+        </div>
+
+        <div class ="telefone">
+            <h1>Encontrou com algum animal em perigo?</h1>
+            <p style="font-size: 23px;">Ligue para nosssas instituições de resgate:</p> <br> <br> 
+            <p style="font-size: 21px;">.DPfauna: (11) 4824-4197</p>
+            <p style="font-size: 21px;">.GCM Ambiental: (11) 4825-2318</p>
+            <p style="font-size: 21px;">.Clube dos Vira-Latas: (11) 2468-1357</p>
+
+           
+        </div>
+
+    </div>
+
+    <div class="sessão-resgates">    
+        <div class="carrossel">
+            <img id="foto-atual" src="img/cobra2.webp" alt="Foto">
+
+            <button onclick="mudarFoto(-1)" class="carrossel-btn carrossel-anterior">&#8249;</button>
+            <button onclick="mudarFoto(1)" class="carrossel-btn carrossel-proximo">&#8250;</button>
+        </div>
+    </div>    
+    
+
+    <div class="DPfauna">
+        <h1>DPfauna</h1>
+        <p style="font-size: 23px;">A DPfauna é uma maiores instituição que atua na proteção da fauna silvestre, realizando resgates, atendimentos e ações de educação ambiental em Ribeirão Pires.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.5998419186963!2d-46.41299682466573!3d-23.698645078705674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6da809ff2a91%3A0x5a8a97fba59ca6d0!2sDPfauna%20-%20Departamento%20de%20Bem-Estar%20Animal!5e1!3m2!1spt-BR!2sbr!4v1789439413037!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+        
+    <footer class="rodape">
+
+        <div class="rodape-conteudo">
+
+            <div class="rodape-logo">
+                <img src="img/logo.png" alt="Conviver é Proteger">
+            </div>
+
+            <div class="rodape-info">
+                <h3>Conviver é Proteger</h3>
+                <p>
+                    Informação e conscientização para a proteção
+                    dos animais silvestres.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+        <script>
+            const fotos = ["img/cobra.webp", "img/cobra menor.webp", "img/macaco.webp", "img/sa.webp"]; // coloque suas imagens aqui
+            let indiceAtual = 0;
+
+            function mudarFoto(direcao) {
+                indiceAtual = (indiceAtual + direcao + fotos.length) % fotos.length;
+                document.getElementById("foto-atual").src = fotos[indiceAtual];
+            }
+        </script>
+
+</body>
+
+</html>
