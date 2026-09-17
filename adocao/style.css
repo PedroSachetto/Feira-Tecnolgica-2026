@@ -1,11 +1,11 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     min-height: 100%;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -59,4 +59,126 @@ body {
 
 .menu nav a:hover {
     opacity: 0.7;
+}
+
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 140px auto 0 auto;
+    padding-bottom: 50px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-grow: 1;
+    font-family: Arial;
+    color: #fff;
+}
+
+.glass-card {
+    background: rgba(54, 54, 37, 0.4);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.intro-card {
+    width: 500px;
+    height: 360px;
+}
+
+.intro-card h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.intro-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-size: 22px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-card h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.content-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.content-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.content-box {
+    flex: 1;
+    height: 330px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rodape {
+    width: 100%;
+    background: rgba(54, 54, 37, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding-top: 30px;
+}
+
+.rodape-conteudo {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.rodape-logo img {
+    width: 230px;
+    height: auto;
+}
+
+.rodape-info {
+    width: 300px;
+}
+
+.rodape-info h3,
+.rodape-links h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.rodape-info p {
+    font-size: 21px;
+    line-height: 1.5;
+    opacity: 0.8;
 }
