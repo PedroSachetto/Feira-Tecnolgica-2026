@@ -52,20 +52,63 @@
 
     </div>
 
-    <div class="sessão-resgates">    
-        <div class="carrossel">
-            <img id="foto-atual" src="img/cobra2.webp" alt="Foto">
-
-            <button onclick="mudarFoto(-1)" class="carrossel-btn carrossel-anterior">&#8249;</button>
-            <button onclick="mudarFoto(1)" class="carrossel-btn carrossel-proximo">&#8250;</button>
-        </div>
-    </div>    
+    
     
 
-    <div class="DPfauna">
+    <div class="instituicao">
         <h1>DPfauna</h1>
-        <p style="font-size: 23px;">A DPfauna é uma maiores instituição que atua na proteção da fauna silvestre, realizando resgates, atendimentos e ações de educação ambiental em Ribeirão Pires.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.5998419186963!2d-46.41299682466573!3d-23.698645078705674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6da809ff2a91%3A0x5a8a97fba59ca6d0!2sDPfauna%20-%20Departamento%20de%20Bem-Estar%20Animal!5e1!3m2!1spt-BR!2sbr!4v1789439413037!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <p>A DPfauna é uma das maiores instituições que atuam na proteção da fauna silvestre, realizando resgates, atendimentos e ações de educação ambiental em Ribeirão Pires.</p>
+
+        <ul class="instituicao-dados">
+            <li><strong>Telefone:</strong> (11) 4824-4197</li>
+            <li><strong>Atendimento:</strong> 24 horas, todos os dias</li>
+            <li><strong>Atua com:</strong> animais silvestres (cobras, gambás, macacos, aves)</li>
+        </ul>
+
+        <div class="carrossel" data-galeria="dpfauna">
+            <img class="foto-atual" src="img/sarue.webp" alt="Resgate realizado pela DPfauna">
+            <button type="button" class="carrossel-btn carrossel-anterior" aria-label="Foto anterior">&#8249;</button>
+            <button type="button" class="carrossel-btn carrossel-proximo" aria-label="Próxima foto">&#8250;</button>
+            <span class="carrossel-contador"></span>
+        </div>
+    </div>
+
+    <div class="instituicao">
+        <h1>GCM Ambiental</h1>
+        <p>A Guarda Civil Municipal Ambiental faz o patrulhamento das áreas de mata e nascentes da cidade. É a equipe acionada em casos de maus-tratos, animais feridos em via pública e ocorrências que precisam de resposta imediata.</p>
+
+        <ul class="instituicao-dados">
+            <li><strong>Telefone:</strong> (11) 4825-2318</li>
+            <li><strong>Atendimento:</strong> 24 horas, todos os dias</li>
+            <li><strong>Atua com:</strong> maus-tratos, animais feridos e crimes ambientais</li>
+        </ul>
+
+        <div class="carrossel" data-galeria="gcm">
+            <!-- troque os arquivos desta galeria no script no fim da página -->
+            <img class="foto-atual" src="img/macaco.webp" alt="Atendimento da GCM Ambiental">
+            <button type="button" class="carrossel-btn carrossel-anterior" aria-label="Foto anterior">&#8249;</button>
+            <button type="button" class="carrossel-btn carrossel-proximo" aria-label="Próxima foto">&#8250;</button>
+            <span class="carrossel-contador"></span>
+        </div>
+    </div>
+
+    <div class="instituicao">
+        <h1>Clube dos Vira-Latas</h1>
+        <p>O Clube dos Vira-Latas é um grupo de protetores independentes que cuida de cães e gatos abandonados na região. Eles resgatam, tratam, castram e encaminham os animais para lares temporários até a adoção.</p>
+
+        <ul class="instituicao-dados">
+            <li><strong>Telefone:</strong> (11) 2468-1357</li>
+            <li><strong>Atendimento:</strong> das 8h às 20h</li>
+            <li><strong>Atua com:</strong> cães e gatos abandonados, castração e adoção</li>
+        </ul>
+
+        <div class="carrossel" data-galeria="viralatas">
+            <!-- troque os arquivos desta galeria no script no fim da página -->
+            <img class="foto-atual" src="img/cobra.webp" alt="Resgate do Clube dos Vira-Latas">
+            <button type="button" class="carrossel-btn carrossel-anterior" aria-label="Foto anterior">&#8249;</button>
+            <button type="button" class="carrossel-btn carrossel-proximo" aria-label="Próxima foto">&#8250;</button>
+            <span class="carrossel-contador"></span>
+        </div>
     </div>
         
     <footer class="rodape">
@@ -89,13 +132,53 @@
     </footer>
 
         <script>
-            const fotos = ["img/cobra.webp", "img/cobra menor.webp", "img/macaco.webp", "img/sa.webp"]; // coloque suas imagens aqui
-            let indiceAtual = 0;
+            // Cada instituição tem sua própria lista de fotos.
+            // Para trocar as imagens, é só mudar os nomes dos arquivos aqui.
+            const galerias = {
+                dpfauna: [
+                    "img/sarue.webp",
+                    "img/cobra.webp",
+                    "img/cobra menor.webp",
+                    "img/macaco.webp",
+                    "img/cobra2.webp"
+                ],
+                gcm: [
+                    "img/falcão.jpeg",
+                    "img/prea.jpeg",
+                    "img/caranguejo.jpeg",
+                ],
+                viralatas: [
+                    "img/gatinho.jpeg",
+                    "img/cachorro.jpeg",
+                    "img/cachorros.jpg"
+                ]
+            };
 
-            function mudarFoto(direcao) {
-                indiceAtual = (indiceAtual + direcao + fotos.length) % fotos.length;
-                document.getElementById("foto-atual").src = fotos[indiceAtual];
-            }
+            document.querySelectorAll(".carrossel").forEach(function (carrossel) {
+                const fotos = galerias[carrossel.dataset.galeria] || [];
+                if (fotos.length === 0) return;
+
+                const imagem = carrossel.querySelector(".foto-atual");
+                const contador = carrossel.querySelector(".carrossel-contador");
+                let indice = 0;
+
+                function mostrar() {
+                    imagem.src = fotos[indice];
+                    contador.textContent = (indice + 1) + " / " + fotos.length;
+                }
+
+                function mudarFoto(direcao) {
+                    indice = (indice + direcao + fotos.length) % fotos.length;
+                    mostrar();
+                }
+
+                carrossel.querySelector(".carrossel-anterior")
+                    .addEventListener("click", function () { mudarFoto(-1); });
+                carrossel.querySelector(".carrossel-proximo")
+                    .addEventListener("click", function () { mudarFoto(1); });
+
+                mostrar();
+            });
         </script>
 
 </body>
