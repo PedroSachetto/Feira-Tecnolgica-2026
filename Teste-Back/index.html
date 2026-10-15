@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitar Resgate</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="menu">
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+        <nav>
+
+            <a href="index.html">INÍCIO</a>
+            <a href="#">ANIMAIS</a>
+            <a href="index.html">RESGATES</a>
+            <a href="#">ADOÇÃO</a>
+            <a href="#">SOBRE</a>
+            <a href="#">DEVS</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div id="mensagem"></div>
+
+        <form action="salvar_resgate.php" method="POST" enctype="multipart/form-data">
+
+            <input type="text" name="nome" placeholder="Seu nome" required>
+
+            <input type="text" name="telefone" placeholder="Telefone" required>
+
+            <input type="text" name="animal" placeholder="Animal" required>
+
+            <textarea name="descricao" placeholder="Descreva a situação" required></textarea>
+
+            <input type="text" name="endereco" placeholder="Endereço" required>
+
+            <select name="bairro" required>
+
+                <option value="">
+                    Selecione o bairro
+                </option>
+
+                <option value="Centro">
+                    Centro
+                </option>
+
+                <option value="Centro Alto">
+                    Centro Alto
+                </option>
+
+                <option value="Vila Suíça">
+                    Vila Suíça
+                </option>
+
+                <option value="Ouro Fino Paulista">
+                    Ouro Fino Paulista
+                </option>
+
+                <option value="Jardim Valentina">
+                    Jardim Valentina
+                </option>
+
+                <option value="Jardim Luso">
+                    Jardim Luso
+                </option>
+
+                <option value="Aliança">
+                    Aliança
+                </option>
+
+                <option value="Santa Luzia">
+                    Santa Luzia
+                </option>
+
+                <option value="Pilar Velho">
+                    Pilar Velho
+                </option>
+
+                <option value="Roncon">
+                    Roncon
+                </option>
+
+            </select>
+
+            <select name="urgencia">
+
+                <option value="Baixa">
+                    Baixa
+                </option>
+
+                <option value="Média">
+                    Média
+                </option>
+
+                <option value="Alta">
+                    Alta
+                </option>
+
+            </select>
+
+            <label for="foto" style="color: white;">Foto do animal:</label>
+
+            <input type="file" name="foto" id="foto" accept="image/*">
+
+            <button type="submit">
+                Solicitar resgate
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <footer class="rodape">
+
+        <div class="rodape-conteudo">
+
+            <div class="rodape-logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+
+            <div class="rodape-info">
+
+                <h3>Conviver é Proteger</h3>
+
+                <p>
+                    Informação e cuidado com os animais
+                    de Ribeirão Pires.
+                </p>
+
+                <a href="login.html">
+                    Área do funcionário
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
