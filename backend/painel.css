@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background-image: url('img/sachetto.png');
+
+    background-size: cover;
+
+    background-position: center top;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+}
+
+
+/* MENU */
+
+.menu {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 78px;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: rgba(54, 54, 37, 0.4);
+
+    z-index: 10;
+}
+
+.logo {
+    margin-left: 85px;
+}
+
+.logo img {
+    width: 105px;
+
+    height: auto;
+
+    display: block;
+}
+
+.menu nav {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 55px;
+}
+
+.menu nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.menu nav a:hover {
+    opacity: 0.7;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 120px auto 60px;
+}
+
+
+/* TÍTULO */
+
+.titulo {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.titulo h1 {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.titulo p {
+    opacity: 0.8;
+}
+
+
+/* LISTA */
+
+#listaChamados {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* CHAMADO */
+
+.chamado {
+    padding: 25px;
+
+    background: rgba(54, 54, 37, 0.75);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* TOPO */
+
+.chamado-topo {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.chamado h2 {
+    font-size: 22px;
+}
+
+
+/* TEXTO */
+
+.chamado p {
+    margin-bottom: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* URGÊNCIA */
+
+.urgencia {
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    font-size: 14px;
+}
+
+
+/* LINHA */
+
+.linha {
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    margin: 15px 0;
+}
+
+
+/* BOTÃO */
+
+.botao-apagar {
+    margin-top: 10px;
+
+    padding: 11px 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: white;
+
+    color: #363625;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao-apagar:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.85;
+}
+
+
+/* SEM CHAMADOS */
+
+.sem-chamados {
+    padding: 40px;
+
+    text-align: center;
+
+    background: rgba(54, 54, 37, 0.75);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+}
+
+.sem-chamados p {
+    margin-top: 10px;
+
+    opacity: 0.8;
+}
+
+
+/* CARREGANDO */
+
+.carregando {
+    text-align: center;
+
+    padding: 30px;
+}
+
+.foto-chamado {
+    width: 300px;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 15px 0;
+}

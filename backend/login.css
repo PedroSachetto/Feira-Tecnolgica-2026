@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background-image: url('img/sachetto.png');
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+}
+
+.login-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.login-card {
+    width: 420px;
+
+    max-width: 90%;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: rgba(54, 54, 37, 0.75);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.login-card h1 {
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    margin-bottom: 25px;
+
+    opacity: 0.8;
+}
+
+.login-card form {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    background: none;
+
+    box-shadow: none;
+
+    backdrop-filter: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.login-card input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: white;
+
+    outline: none;
+}
+
+.login-card input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-card button {
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: white;
+
+    color: #363625;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    opacity: 0.85;
+}
+
+.login-card > a {
+    display: block;
+
+    margin-top: 20px;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.erro {
+    margin-bottom: 15px;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    background: rgba(54, 54, 37, 0.8);
+}
